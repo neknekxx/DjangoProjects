@@ -1,0 +1,87 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;  /* Apply Poppins font for the body */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7CFD8; /* Background color of the page */
+    text-align: center;
+}
+
+/* Calculator container */
+.calculator {
+    background-color: #73C7C7; /* Background color of the calculator */
+    padding: 30px; /* Increased padding for a larger feel */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Widened the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title Styling */
+.calculator h1 {
+    font-size: 28px; /* Larger font size for title */
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Kanit', sans-serif;  /* Use Kanit for the title */
+    font-weight: 500; /* Make the title a bit bolder */
+}
+
+/* Display styling */
+.display {
+    width: 100%;
+    height: 60px; /* Increased height for the display */
+    text-align: right;
+    font-size: 28px; /* Larger text */
+    padding: 15px; /* Increased padding */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+/* Button grid layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 4 columns */
+    gap: 15px; /* Increased gap between buttons */
+}
+
+/* Button styling */
+.btn {
+    padding: 25px; /* Increased padding for larger buttons */
+    font-size: 24px; /* Increased font size for button text */
+    font-weight: bold; /* Made the numbers bold */
+    background-color: #A6F1E0; /* Button background color */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-family: 'Poppins', sans-serif;  /* Apply Poppins font to buttons */
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: #F4F8D3; /* Hover color */
+}
+
+.btn:active {
+    background-color: #bbb;
+}
+
+/* Add .poppins-light class wherever you want to apply the lighter Poppins font */
+.poppins-light {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
